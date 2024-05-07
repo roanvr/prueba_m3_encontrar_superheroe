@@ -9,12 +9,33 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <nav class="navbar bg-info navbar-dark">
+    <nav class="navbar bg-warning navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/sh2.jpg" alt="">Superhero</a>
         </div>
       </nav>
+      <main class="container">
+        <header class="text-center">
+            <img class ="header-logo" src="./assets/img/sh1.jpg" alt="">
+        </header>
+        <section>
+            <h1>Encuentra tu superhéroe</h1>
+            <form id="formulario">
+                <div class="">
+                    <label for="idHero">Ingresa el número del superhéroe que quieres buscar</label>
+                    <input class ="form-control mt-3" type="text" id="idHero">
+                    <button class="btn btn-danger mt-3">Buscar</button>
+                </div>
+            </form>
+        </section>
+        <section class="row mt-4">
+            <div id="resultado" class="col-md-6"></div>
+        <div id="chartContainer" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+        </section>
+
+      </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
   </body>
 </html>
